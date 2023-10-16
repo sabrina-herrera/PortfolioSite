@@ -8,6 +8,15 @@ html {
     background-color: #F7F6E4;
 }
 
+.headerlines {
+    width: 600px;
+    color: #593832;
+}
+
+.headerlines, h3 {
+    display: inline-block;
+}
+
 
 /* TEXT STYLING */
 
@@ -17,13 +26,14 @@ h1, h2, h3, h4, li {
 
 h5, p {
     font-family: 'Noto Sans', sans-serif;
+    color: #593832;
 }
 
 h1, h2, h4, li {
     color: #F7F6E4;
 };
 
-h3, p {
+h3 {
     color: #593832;
 }
 
@@ -38,14 +48,83 @@ h1 {
     background-size: cover;
 }
 
+.herocrumbs {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.herocrumb {
+    display: inline-block;
+}
+
+#funfacticon {
+    width: 180px;
+    height: 180px;
+}
+
+/* STICKY NAV BAR */
+
+.crumbs {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+#stickynav {
+    background-color: #C4AADC85;
+    border-radius: 50px;
+}
 
 /* ABOUT */
 
+#p2 {
+    display: inline-block;
+    width: 490px;
+}
+
+#resumeicon {
+    display: inline-block;
+    width: 190px;
+    height: 190px;
+}
 
 
 /* PROJECTS */
 
+.projectname, .projectyear, .projectlink {
+    display: inline-block;
+    color: #F7F6E4;
+}
 
+.projects {
+    width: 986px;
+    height: 93px;
+}
+
+.projectscontainer {
+    border: solid 2px #593832;
+    width: 986px;
+}
+
+.projectimage {
+    width: 986px;
+    height: auto;
+}
+
+#project1header {
+    background-image: url(./project1.jpg);
+}
+
+#project2header {
+    background-image: url(./project2.jpg);
+}
+
+#project3header {
+    background-image: url(./project3.jpg);
+}
 
 /* SKILLS */
 
@@ -56,16 +135,52 @@ h1 {
     height: 988px;
 }
 
+.skill {
+    display: inline-block;
+}
+
 .skillicon {
-    display: inline;
     width: 280px;
     height: 204px;
-    border: 1px solid red;
 }
 
 
 /* CONTACT */
 
+.contactcircle {
+    background-color: #C4AADC;
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    display: inline-block;
+}
 
+.contactinfo {
+    display: inline-block;
+}
+
+#emailicon {
+    width: 76px;
+    height: 58px;
+}
+
+#phoneicon {
+    width: 97px;
+    height: 69px;
+}
+
+#linkedinicon {
+    width: 93px;
+    height: 65px;
+}
+
+#githubicon {
+    width: 121px;
+    height: 84px;
+}
 
 /* FOOTER */
+
+#copyrightfooter {
+    font-family: 'Dela Gothic One', sans-serif;
+}
