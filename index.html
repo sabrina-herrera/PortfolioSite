@@ -15,7 +15,7 @@
     <!--- HERO PAGE -->
 
     <div id="hero">
-        <div>
+        <div id="heronav">
             <nav>
                 <ul class="herocrumbs">
                     <li class="herocrumb">about</li>
@@ -33,8 +33,8 @@
     </div>
 
     <!-- STICKY NAV BAR -->
-    <div>
-        <nav id="stickynav">
+    <div id="stickynav">
+        <nav id="navbar">
             <ul class="crumbs"> 
                 <li class="crumb">about</li>
                 <li class="crumb">projects</li>
@@ -46,13 +46,13 @@
 
     <!-- ABOUT -->
 
-    <div>
+    <div class="sectioncontainers">
         <div>
             <hr class="headerlines">
             <h3>About</h3>
             <hr class="headerlines">
         </div>
-        <div>
+        <div class="sectioncontent" id="aboutcontent">
             <p id="p1">
                 I was born and raised in Los Angeles, CA and earned my Bachelor of Arts from San Francisco University. 
                 I have over 10 years of client facing customer service experience in the advertisement, insurance, service, 
@@ -71,13 +71,13 @@
 
     <!-- PROJECTS -->
 
-    <div>
+    <div class="sectioncontainers">
         <div>
             <hr class="headerlines">
             <h3>Projects</h3>
             <hr class="headerlines">
         </div>
-        <div>
+        <div class="sectioncontent">
             <div class="projectscontainer" id="project1">
                 <div class="projects" id="project1header">
                     <p class="projectname">Portfolio Website</p>
@@ -108,49 +108,51 @@
 
     <!-- SKILLS -->
 
-    <div>
+    <div class="sectioncontainers">
         <div>
             <div>
                 <hr class="headerlines">
                 <h3>Skills</h3>
                 <hr class="headerlines">
             </div>
-            <div id="skillscontainer">
-                <div class="skill">
-                    <img class="skillicon" src="./resources/PNGs/logocream/html.PNG">
-                    <h4>HTML</h4>
-                </div>
-                <div class="skill">
-                    <img class="skillicon" src="./resources/PNGs/logocream/css.PNG">
-                    <h4>CSS</h4>
-                </div>
-                <div class="skill">
-                    <img class="skillicon" src="./resources/PNGs/logocream/js.PNG">
-                    <h4>JAVASCRIPT</h4>
-                </div>
-                <div class="skill">
-                    <img class="skillicon" src="./resources/PNGs/logocream/react.PNG">
-                    <h4>REACT</h4>
-                </div>
-                <div class="skill">
-                    <img class="skillicon" src="./resources/PNGs/logocream/redux.PNG">
-                    <h4>REDUX</h4>
-                </div>
-                <div class="skill">
-                    <img class="skillicon" src="./resources/PNGs/logocream/git.PNG">
-                    <h4>GIT</h4>
-                </div>
-                <div class="skill">
-                    <img class="skillicon" src="./resources/PNGs/logocream/github.PNG">
-                    <h4>GITHUB</h4>
-                </div>
-                <div class="skill">
-                    <img class="skillicon" src="./resources/PNGs/logocream/figma.PNG">
-                    <h4>FIGMA</h4>
-                </div>
-                <div class="skill">
-                    <img class="skillicon" src="./resources/PNGs/logocream/creativecloud.PNG">
-                    <h4>ADOBECC</h4>
+            <div class="sectioncontent">
+                <div id="skillscontainer">
+                    <div class="skill">
+                        <img class="skillicon" src="./resources/PNGs/logocream/html.PNG">
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="skill">
+                        <img class="skillicon" src="./resources/PNGs/logocream/css.PNG">
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="skill">
+                        <img class="skillicon" src="./resources/PNGs/logocream/js.PNG">
+                        <h4>JAVASCRIPT</h4>
+                    </div>
+                    <div class="skill">
+                        <img class="skillicon" src="./resources/PNGs/logocream/react.PNG">
+                        <h4>REACT</h4>
+                    </div>
+                    <div class="skill">
+                        <img class="skillicon" src="./resources/PNGs/logocream/redux.PNG">
+                        <h4>REDUX</h4>
+                    </div>
+                    <div class="skill">
+                        <img class="skillicon" src="./resources/PNGs/logocream/git.PNG">
+                        <h4>GIT</h4>
+                    </div>
+                    <div class="skill">
+                        <img class="skillicon" src="./resources/PNGs/logocream/github.PNG">
+                        <h4>GITHUB</h4>
+                    </div>
+                    <div class="skill">
+                        <img class="skillicon" src="./resources/PNGs/logocream/figma.PNG">
+                        <h4>FIGMA</h4>
+                    </div>
+                    <div class="skill">
+                        <img class="skillicon" src="./resources/PNGs/logocream/creativecloud.PNG">
+                        <h4>ADOBECC</h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,42 +160,44 @@
 
     <!-- CONTACT -->
 
-    <div>
+    <div class="sectioncontainers">
         <div>
             <hr class="headerlines">
             <h3>Contact</h3>
             <hr class="headerlines">
         </div>
-        <div>
-            <h5>Let's Connect</h5>
-        </div>
-        <div>
-            <div>
-                <div class="contactcircle">
-                    <img id="emailicon" src="./resources/PNGs/logocream/mail.PNG">
-                </div>
-                <p class="contactinfo">BYSABRINAHERRERA@GMAIL.COM</p>
+        <div class="sectioncontent">
+            <div id="connectheader">
+                <h5>Let's Connect</h5>
             </div>
-            <hr>
             <div>
-                <div class="contactcircle">
-                    <img id="phoneicon" src="./resources/PNGs/logocream/phone.PNG">
+                <div>
+                    <div class="contactcircle">
+                        <img id="emailicon" src="./resources/PNGs/logocream/mail.PNG">
+                    </div>
+                    <p class="contactinfo">BYSABRINAHERRERA@GMAIL.COM</p>
                 </div>
-                <p class="contactinfo">(818) 359 - 7884</p>
-            </div>
-            <hr>
-            <div>
-                <div class="contactcircle">
-                    <img id="linkedinicon" src="./resources/PNGs/logocream/linkedin.PNG">
+                <hr>
+                <div>
+                    <div class="contactcircle">
+                        <img id="phoneicon" src="./resources/PNGs/logocream/phone.PNG">
+                    </div>
+                    <p class="contactinfo">(818) 359 - 7884</p>
                 </div>
-                <p class="contactinfo">linkedin.com/in/herrerasabrina/</p>
-            </div>
-            <hr>
-            <div>
-                <div class="contactcircle">
-                    <img id="githubicon" src="./resources/PNGs/logocream/github.PNG">
+                <hr>
+                <div>
+                    <div class="contactcircle">
+                        <img id="linkedinicon" src="./resources/PNGs/logocream/linkedin.PNG">
+                    </div>
+                    <p class="contactinfo">linkedin.com/in/herrerasabrina/</p>
                 </div>
-                <p class="contactinfo">github.com/sabrina-herrera</p>
+                <hr>
+                <div>
+                    <div class="contactcircle">
+                        <img id="githubicon" src="./resources/PNGs/logocream/github.PNG">
+                    </div>
+                    <p class="contactinfo">github.com/sabrina-herrera</p>
+                </div>
             </div>
         </div>
     </div>
