@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./resources/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans:wght@300;400;600&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -31,6 +31,8 @@
                 <h2>Software Engineer</h2>
             </div>
             <img id="funfacticon" src="./resources/PNGs/funfacts/funfacts.png" />
+            <img id="downarrow" src="./resources/DOWNARROW.png">
+            <div id="spacer"></div>
         </section>
 
         <!-- BODY START -->
@@ -50,8 +52,8 @@
 
             <!-- ABOUT -->
 
-            <div class="sectioncontainers">
-                <div>
+            <div class="sectioncontainers" id="abouttop">
+                <div class="sectionheaders">
                     <hr class="headerlines">
                     <h3>About</h3>
                     <hr class="headerlines">
@@ -76,7 +78,7 @@
             <!-- PROJECTS -->
 
             <div class="sectioncontainers">
-                <div>
+                <div class="sectionheaders">
                     <hr class="headerlines">
                     <h3>Projects</h3>
                     <hr class="headerlines">
@@ -84,123 +86,124 @@
                 <div class="sectioncontent">
                     <div class="projectscontainer" id="project1">
                         <div class="projects" id="project1header">
-                            <p class="projectname">Portfolio Website</p>
+                            <p class="projectname">PORTFOLIO WEBSITE</p>
                             <p class="projectyear">2023</p>
-                            <p class="projectlink">View On GitHub &#8594;</p>
+                            <p class="projectlink">VIEW ON GITHUB &#8594;</p>
                         </div>
                         <img class="projectimage" src="./resources/PORTFOLIOWIP.jpg">
                     </div>
                     <div class="projectscontainer" id="project2">
                         <div class="projects" id="project2header">
-                            <p class="projectname">Boop-A-Nose</p>
+                            <p class="projectname">BOOP-A-NOSE</p>
                             <p class="projectyear">2023</p>
-                            <p class="projectlink">View On GitHub &#8594;</p>
+                            <p class="projectlink">VIEW ON GITHUB &#8594;</p>
                         </div>
                         <img class="projectimage" src="./resources/placeholder.png">
                     </div>
                     <div class="projectscontainer" id="project3">
                         <div class="projects" id="project3header">
-                            <p class="projectname">Anti-Impluse Buy Extension</p>
+                            <p class="projectname">ANTI-IMPULSE BUY EXTENSION</p>
                             <p class="projectyear">2023</p>
-                            <p class="projectlink">View On GitHub &#8594;</p>
+                            <p class="projectlink">VIEW ON GITHUB &#8594;</p>
                         </div>
                         <img class="projectimage" src="./resources/placeholder.png">
                     </div>
                 </div>
-                <p>More GitHub Repositories &#8594;</p>
+                <div id="moreprojects">
+                    <p>MORE GITHUB REPOSITORIES &#8594;</p>
+                </div>
             </div>
 
             <!-- SKILLS -->
 
             <div class="sectioncontainers">
-                <div>
-                    <div>
-                        <hr class="headerlines">
-                        <h3>Skills</h3>
-                        <hr class="headerlines">
-                    </div>
-                    <div class="sectioncontent">
-                        <div id="skillscontainer">
-                            <div class="skill">
-                                <img class="skillicon" src="./resources/PNGs/logocream/html.PNG">
-                                <h4>HTML</h4>
-                            </div>
-                            <div class="skill">
-                                <img class="skillicon" src="./resources/PNGs/logocream/css.PNG">
-                                <h4>CSS</h4>
-                            </div>
-                            <div class="skill">
-                                <img class="skillicon" src="./resources/PNGs/logocream/js.PNG">
-                                <h4>JAVASCRIPT</h4>
-                            </div>
-                            <div class="skill">
-                                <img class="skillicon" src="./resources/PNGs/logocream/react.PNG">
-                                <h4>REACT</h4>
-                            </div>
-                            <div class="skill">
-                                <img class="skillicon" src="./resources/PNGs/logocream/redux.PNG">
-                                <h4>REDUX</h4>
-                            </div>
-                            <div class="skill">
-                                <img class="skillicon" src="./resources/PNGs/logocream/git.PNG">
-                                <h4>GIT</h4>
-                            </div>
-                            <div class="skill">
-                                <img class="skillicon" src="./resources/PNGs/logocream/github.PNG">
-                                <h4>GITHUB</h4>
-                            </div>
-                            <div class="skill">
-                                <img class="skillicon" src="./resources/PNGs/logocream/figma.PNG">
-                                <h4>FIGMA</h4>
-                            </div>
-                            <div class="skill">
-                                <img class="skillicon" src="./resources/PNGs/logocream/creativecloud.PNG">
-                                <h4>ADOBECC</h4>
-                            </div>
+                  <div class="sectionheaders">
+                    <hr class="headerlines">
+                    <h3>Skills</h3>
+                    <hr class="headerlines">
+                </div>
+                <div class="sectioncontent" id="skillscontent">
+                    <div id="skillscontainer">
+                        <div class="skill">
+                            <img class="skillicon" src="./resources/PNGs/logocream/html.PNG">
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="skill">
+                            <img class="skillicon" src="./resources/PNGs/logocream/css.PNG">
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="skill">
+                            <img class="skillicon" src="./resources/PNGs/logocream/js.PNG">
+                            <h4>JAVASCRIPT</h4>
+                        </div>
+                        <div class="skill">
+                            <img class="skillicon" src="./resources/PNGs/logocream/react.PNG">
+                            <h4>REACT</h4>
+                        </div>
+                        <div class="skill">
+                            <img class="skillicon" src="./resources/PNGs/logocream/redux.PNG">
+                            <h4>REDUX</h4>
+                        </div>
+                        <div class="skill">
+                            <img class="skillicon" src="./resources/PNGs/logocream/git.PNG">
+                            <h4>GIT</h4>
+                        </div>
+                        <div class="skill">
+                            <img class="skillicon" src="./resources/PNGs/logocream/github.PNG">
+                            <h4>GITHUB</h4>
+                        </div>
+                        <div class="skill">
+                            <img class="skillicon" src="./resources/PNGs/logocream/figma.PNG">
+                            <h4>FIGMA</h4>
+                        </div>
+                        <div class="skill">
+                            <img class="skillicon" src="./resources/PNGs/logocream/creativecloud.PNG">
+                            <h4>ADOBECC</h4>
                         </div>
                     </div>
                 </div>
+                
             </div>
 
             <!-- CONTACT -->
 
             <div class="sectioncontainers">
-                <div>
+                <div class="sectionheaders">
                     <hr class="headerlines">
                     <h3>Contact</h3>
                     <hr class="headerlines">
                 </div>
                 <div class="sectioncontent">
                     <div id="connectheader">
-                        <h5>Let's Connect</h5>
+                        <h5>LET'S CONNECT</h5>
                     </div>
-                    <div>
-                        <div>
+                    <div id="connectcontent">
+                        <div class="contacttype">
                             <div class="contactcircle">
                                 <img id="emailicon" src="./resources/PNGs/logocream/mail.PNG">
                             </div>
                             <p class="contactinfo">BYSABRINAHERRERA@GMAIL.COM</p>
                         </div>
                         <hr>
-                        <div>
+                        <div class="contacttype">
                             <div class="contactcircle">
                                 <img id="phoneicon" src="./resources/PNGs/logocream/phone.PNG">
                             </div>
                             <p class="contactinfo">(818) 359 - 7884</p>
                         </div>
                         <hr>
-                        <div>
+                        <div class="contacttype">
                             <div class="contactcircle">
                                 <img id="linkedinicon" src="./resources/PNGs/logocream/linkedin.PNG">
                             </div>
-                            <p class="contactinfo">linkedin.com/in/herrerasabrina/</p>
+                            <p class="contactinfo">LINKEDIN.COM/IN/HERRERASABRINA/</p>
                         </div>
                         <hr>
-                        <div>
+                        <div class="contacttype">
                             <div class="contactcircle">
                                 <img id="githubicon" src="./resources/PNGs/logocream/github.PNG">
                             </div>
-                            <p class="contactinfo">github.com/sabrina-herrera</p>
+                            <p class="contactinfo">GITHUB.COM/SABRINA-HERRERA</p>
                         </div>
                     </div>
                 </div>
