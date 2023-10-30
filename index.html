@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans:wght@300;400;600&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
@@ -19,10 +20,10 @@
                 <div class="navhighlight"></div>
                 <nav class="heronav">
                     <ul class="herocrumbs">
-                        <li class="herocrumb">about</li>
-                        <li class="herocrumb">projects</li>
-                        <li class="herocrumb">skills</li>
-                        <li class="herocrumb">contact</li>
+                        <li class="herocrumb"><a class="herolink" href="#abouttop">about</a></li>
+                        <li class="herocrumb"><a class="herolink" href="#projectstop">projects</a></li>
+                        <li class="herocrumb"><a class="herolink" href="#skillstop">skills</a></li>
+                        <li class="herocrumb"><a class="herolink" href="#contacttop">contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -31,7 +32,7 @@
                 <h2>Software Engineer</h2>
             </div>
             <img id="funfacticon" src="./resources/PNGs/funfacts/funfacts.png" />
-            <img id="downarrow" src="./resources/DOWNARROW.png">
+            <a class="downarrow" href="#abouttop"><img class="downarrow" src="./resources/DOWNARROW.png"></a>
             <div id="spacer"></div>
         </section>
 
@@ -42,14 +43,16 @@
             <div id="stickynav">
                 <nav id="navbar">
                     <ul class="crumbs"> 
-                        <li class="crumb">about</li>
-                        <li class="crumb">projects</li>
-                        <li class="crumb">skills</li>
-                        <li class="crumb">contact</li>
+                        <li class="crumb"><a class="navlink" href="#abouttop">about</a></li>
+                        <li class="crumb"><a class="navlink" href="#projectstop">projects</a></li>
+                        <li class="crumb"><a class="navlink" href="#skillstop">skills</a></li>
+                        <li class="crumb"><a class="navlink" href="#contacttop">contact</a></li>
                     </ul>
                 </nav>
             </div>
-
+            <div class="returntotop">
+                <a href="#abouttop" class="returntotop"><img class="returntotop" src="./resources/DOWNARROW.png"></a>
+            </div>
             <!-- ABOUT -->
 
             <div class="sectioncontainers" id="abouttop">
@@ -71,13 +74,13 @@
                         from Codecademy, I have self-taught the skills for front end 
                         development and have worked on some really great projects.
                     </p>
-                    <img id="resumeicon" src="./resources/RESUME.jpg">
+                    <a id="resumelink" href="./resources/HerreraResume.pdf" target="_blank"><img id="resumeicon" src="./resources/RESUME.jpg"></a>
                 </div>
             </div>
 
             <!-- PROJECTS -->
 
-            <div class="sectioncontainers">
+            <div class="sectioncontainers" id="projectstop">
                 <div class="sectionheaders">
                     <hr class="headerlines">
                     <h3>Projects</h3>
@@ -110,13 +113,13 @@
                     </div>
                 </div>
                 <div id="moreprojects">
-                    <p>MORE GITHUB REPOSITORIES &#8594;</p>
+                    <p><a href="https://github.com/sabrina-herrera?tab=repositories" target="_blank" id="moreprojectslink">MORE GITHUB REPOSITORIES &#8594;</a></p>
                 </div>
             </div>
 
             <!-- SKILLS -->
 
-            <div class="sectioncontainers">
+            <div class="sectioncontainers" id="skillstop">
                   <div class="sectionheaders">
                     <hr class="headerlines">
                     <h3>Skills</h3>
@@ -167,7 +170,7 @@
 
             <!-- CONTACT -->
 
-            <div class="sectioncontainers">
+            <div class="sectioncontainers" id="contacttop">
                 <div class="sectionheaders">
                     <hr class="headerlines">
                     <h3>Contact</h3>
@@ -182,28 +185,28 @@
                             <div class="contactcircle">
                                 <img id="emailicon" src="./resources/PNGs/logocream/mail.PNG">
                             </div>
-                            <p class="contactinfo">BYSABRINAHERRERA@GMAIL.COM</p>
+                            <p class="contactinfo"><a class="contactlink" href="mailto:bysabrinaherrera@gmail.com">BYSABRINAHERRERA@GMAIL.COM</a></p>
                         </div>
                         <hr>
                         <div class="contacttype">
                             <div class="contactcircle">
                                 <img id="phoneicon" src="./resources/PNGs/logocream/phone.PNG">
                             </div>
-                            <p class="contactinfo">(818) 359 - 7884</p>
+                            <p class="contactinfo"><a class="contactlink" href="tel:+1(818)359-7884">(818) 359 - 7884</a></p>
                         </div>
                         <hr>
                         <div class="contacttype">
                             <div class="contactcircle">
                                 <img id="linkedinicon" src="./resources/PNGs/logocream/linkedin.PNG">
                             </div>
-                            <p class="contactinfo">LINKEDIN.COM/IN/HERRERASABRINA/</p>
+                            <p class="contactinfo"><a class="contactlink" href="https://www.linkedin.com/in/herrerasabrina/" target="_blank">LINKEDIN.COM/IN/HERRERASABRINA/</a></p>
                         </div>
                         <hr>
                         <div class="contacttype">
                             <div class="contactcircle">
                                 <img id="githubicon" src="./resources/PNGs/logocream/github.PNG">
                             </div>
-                            <p class="contactinfo">GITHUB.COM/SABRINA-HERRERA</p>
+                            <p class="contactinfo"><a class="contactlink" href="https://github.com/sabrina-herrera" target="_blank">GITHUB.COM/SABRINA-HERRERA</a></p>
                         </div>
                     </div>
                 </div>
@@ -211,9 +214,10 @@
 
             <!-- FOOTER -->
 
-            <p id="copyrightfooter">&copy Sabrina Herrera 2023</p>
+            <p id="copyrightfooter">&copy SABRINA HERRERA 2023</p>
             
         </section>
     </div>
+    <script src="./resources/index.js" type="text/javascript"></script>
 </body>
 </html>
