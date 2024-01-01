@@ -24,10 +24,12 @@ body {
     scroll-snap-type: y mandatory;
 }
 
+
 section {
     scroll-snap-align: start;
     width: 100%;
     height: 100vh;
+    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
@@ -107,6 +109,12 @@ h5 {
     margin: 20px 25px;
 }
 
+@media screen and (max-width: 500px) {
+h1 {
+     font-size: 2rem;
+ }
+}
+
 /* HERO PAGE */
 
 .hero {
@@ -178,6 +186,42 @@ h5 {
 
 #funfacticon:hover {
     animation-play-state: paused;
+}
+
+#funfacticon:visited {
+    animation: 6s rotate linear infinite;
+}
+
+.funfact {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    display: none;
+}
+
+#funfact1 {
+    top: 77px;
+    left: 150px;
+}
+
+#funfact2 {
+    top: 158px;
+    left: 813px;
+}
+
+#funfact3 {
+    top: 86px;
+    left: 1370px;
+}
+
+#funfact4 {
+    top: 688px;
+    left: 462px;
+}
+
+#funfact5 {
+    top: 688px;
+    left: 1217px;
 }
 
 #spacer {
@@ -322,10 +366,8 @@ img.returntotop {
     animation-play-state: paused;
 }
 
-#resumeicon:hover {
-    transform: scale(1.1);
-    transition-duration: 200ms;
-    transition-timing-function: ease-in;
+#resumeicon:visited {
+    animation: 6s rotate linear infinite;  
 }
 
 @keyframes rotate {
@@ -339,11 +381,22 @@ img.returntotop {
 
 /* PROJECTS */
 
+#projectstop {
+    display: flex;;
+    height: 1691px;
+}
+
+#projects {
+    align-self: flex-end;
+    position: relative;
+    top: 0px;
+    max-height: 1691px;
+}
+
 
 .projectscontainer {
     border: solid 2px #593832;
     width: 988px;
-    max-height: 498px;
 }
 
 .projects {
@@ -352,6 +405,23 @@ img.returntotop {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#project1 {
+    max-height: 498px;
+    overflow: hidden;
+    border-bottom-width: 0;
+}
+
+#project2 {
+    max-height: 498px;
+    overflow: hidden;
+    border-bottom-width: 0;
+}
+
+#project3 {
+    height: 498px;
+    overflow: hidden;
 }
 
 #project1header {
@@ -374,14 +444,14 @@ img.returntotop {
 
 .projectimage {
     width: 984px;
-    height: 407px;
+    min-height: 0px;
+    max-height: 407px;
     overflow: hidden;
 }
 
-
-
 #moreprojects {
     width: 988px;
+    margin: 0 auto;
 }
 
 #moreprojectslink {
@@ -513,6 +583,28 @@ img.returntotop {
 #githubicon {
     width: 121px;
     height: 84px;
+}
+
+#copy {
+    height: 28px;
+    width: 28px;
+    transform: scale(-1);
+}
+
+#copy:visited {
+    transform: scale(-1);
+}
+
+#copy:hover {
+    transform: scale(-1.25);
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+}
+
+#copy:active {
+    transform: scale(-1.5);
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
 }
 
 /* FOOTER */
