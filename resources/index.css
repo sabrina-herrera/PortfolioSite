@@ -31,6 +31,7 @@ section {
     height: 100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 .sectionheaders {
@@ -40,7 +41,7 @@ section {
 }
 
 .headerlines {
-    width: 400px;
+    width: 100px;
     color: #593832;
     flex-grow: 1;
 }
@@ -62,7 +63,20 @@ section {
     justify-content: center;
     flex-wrap: wrap;
 }
+@media screen and (max-width: 600px) {
 
+    .sectionheaders {
+        height: 40px;
+    }
+    .sectioncontainers {
+        scroll-margin-top: 90px;
+        margin: 0px 22px;
+    }
+
+    .headerlines {
+        width: 100px;
+    }
+}
 
 /* TEXT STYLING */
 
@@ -83,15 +97,17 @@ h3, p {
 }
 
 h1 {
-    font-size: 6.875rem;
+    font-size: 5.3rem;
     align-self: flex-start;
     margin: 0;
+    text-shadow: #E56E3425 5px 5px 4px;
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: 3.85rem;
     align-self: flex-end;
     margin: 0;
+    text-shadow: #E56E3425 5px 5px 4px;
 }
 
 h3 {
@@ -109,10 +125,43 @@ h5 {
     margin: 20px 25px;
 }
 
-@media screen and (max-width: 500px) {
-h1 {
-     font-size: 2rem;
- }
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1.49rem;
+        margin: 15px;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width:900px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+   
+   h2 {
+       font-size: 1.5rem;
+   }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+   
+   h2 {
+       font-size: 1.5rem;
+   }
 }
 
 /* HERO PAGE */
@@ -120,6 +169,7 @@ h1 {
 .hero {
     background-image: url(./background.jpg);
     background-size:  cover;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -193,35 +243,35 @@ h1 {
 }
 
 .funfact {
-    width: 180px;
-    height: 180px;
+    width: 260px;
+    height: 260px;
     position: absolute;
     display: none;
 }
 
 #funfact1 {
-    top: 77px;
-    left: 150px;
+    top: 6.9%;
+    left: 8.7%;
 }
 
 #funfact2 {
-    top: 158px;
-    left: 813px;
+    top: 14.1%;
+    left: 47%;
 }
 
 #funfact3 {
-    top: 86px;
-    left: 1370px;
+    top: 7.7%;
+    left: 79.3%;
 }
 
 #funfact4 {
-    top: 688px;
-    left: 462px;
+    bottom: 9.8%;
+    left: 26.7%;
 }
 
 #funfact5 {
-    top: 688px;
-    left: 1217px;
+    bottom: 9.8%;
+    left: 70.4%;
 }
 
 #spacer {
@@ -243,9 +293,18 @@ h1 {
 
 .title {
     display: flex;
-    flex-direction: column;
     width: 100%;
     padding: 0px;
+    margin: 0px;
+    justify-content: center;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    max-width: 1070px;
+    padding: 0px auto;
+    margin: 0px;
     justify-content: flex-start;
 }
 
@@ -255,21 +314,224 @@ h1 {
     flex-wrap: wrap;
     overflow: scroll;
 }
+
+@media screen and (max-width: 600px) {
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .herocrumb {
+        font-size: 1.125rem;
+    }
+
+    .herocrumbs {
+        margin: 0px;
+    }
+
+    .heronavcontainer {
+        width: 346px;
+        height: 30px;
+    }
+
+    .heronav {
+        width: 346px;
+        height: 30px;
+    }
+
+    .navhighlight {
+        width: 346px;
+        height: 16px;
+    }
+
+    #funfacticon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .downarrow {
+        width: 76px;
+        height: 30px;
+    }
+
+    #spacer {
+        width: 90px;
+        height: 90px;
+    }
+
+    .funfact {
+        width: 130px;
+        height: 130px;
+    }
+
+    #funfact1 {
+        top: 7.5%;
+        left: 4.7%;
+    }
+    
+    #funfact2 {
+        top: 15.6%;
+        left: 64%;
+    }
+    
+    #funfact3 {
+        top: 30%;
+        left: 34.9%;
+    }
+    
+    #funfact4 {
+        top: 58%;
+        left: 18.6%;
+    }
+    
+    #funfact5 {
+        top: 73%;
+        left: 65.1%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .hero {
+        padding: 57px 50px 30px;
+    }
+
+    .herocrumb {
+        font-size: 2rem;
+    }
+
+    .herocrumbs {
+        margin: 0px;
+    }
+
+    .heronavcontainer {
+        width: 573px;
+        height: 55px;
+    }
+
+    .heronav {
+        width: 573px;
+        height: 55px;
+    }
+
+    .navhighlight {
+        width: 573px;
+        height: 30px;
+    }
+
+    #funfacticon {
+        width: 145px;
+        height: 145px;
+    }
+
+    .downarrow {
+        width: 100px;
+        height: 40px;
+    }
+
+    #spacer {
+        width: 145px;
+        height: 145px;
+    }
+
+    .funfact {
+        width: 213px;
+        height: 213px;
+    }
+
+    #funfact1 {
+        top: 7.5%;
+        left: 4.7%;
+    }
+    
+    #funfact2 {
+        top: 15.6%;
+        left: 64%;
+    }
+    
+    #funfact3 {
+        top: 27%;
+        left: 34.9%;
+    }
+    
+    #funfact4 {
+        top: 58%;
+        left: 18.6%;
+    }
+    
+    #funfact5 {
+        top: 73%;
+        left: 65.1%;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    .hero {
+        padding: 57px 50px 30px;
+    }
+
+    .herocrumb {
+        font-size: 2rem;
+    }
+
+    .herocrumbs {
+        margin: 0px;
+    }
+
+    .heronavcontainer {
+        width: 573px;
+        height: 55px;
+    }
+
+    .heronav {
+        width: 573px;
+        height: 55px;
+    }
+
+    .navhighlight {
+        width: 573px;
+        height: 30px;
+    }
+
+    .subtitle {
+        max-width: 735px;
+    }
+
+    #funfacticon {
+        width: 145px;
+        height: 145px;
+    }
+
+    .downarrow {
+        width: 100px;
+        height: 40px;
+    }
+
+    #spacer {
+        width: 145px;
+        height: 145px;
+    }
+
+    .funfact {
+        width: 213px;
+        height: 213px;
+    }
+}
+
 /* STICKY NAV BAR */
 
 #stickynav {
     position: sticky;
     top: 30px;
-    width: 864px;
-    height: 109px;
+    width: 100%;
     z-index: 1;
+    display: flex;
+    justify-content: center;
 }
 
 #navbar {
     background-color: #C4AADC90;
     border-radius: 50px;
-    width: 100%;
-    height: 100%;
+    width: 864px;
+    height: 109px;
     display: flex;
 }
 
@@ -331,11 +593,42 @@ img.returntotop {
     transition-timing-function: ease-in;
 }
 
-/* ABOUT */
+@media screen and (max-width: 600px) {
+    #stickynav {
+        top: 25px;
+    }
 
-#abouttop {
-    margin-top: 35px;
+    #navbar {
+        width: 390px;
+        height: 50px;
+    }
+
+    .crumb {
+        font-size: 1.125rem;
+    }
+
+    .navlink {
+        padding: 0px 8px 5px;
+    }
 }
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+
+    #navbar {
+        width: 674px;
+        height: 67px;
+    }
+
+    .crumb {
+        font-size: 2rem;
+    }
+
+    .navlink {
+        padding: 0px 8px 5px;
+    }
+}
+
+/* ABOUT */
 
 #aboutcontent {
     width: 988px;
@@ -343,16 +636,16 @@ img.returntotop {
 }
 
 #aboutbreak {
-    width: 988px;
+    width: 100%;
 }
 
 #p1 {
-    width: 988px;
+    width: 100%;
 }
 
 #p2 {
     display: inline-block;
-    width: 490px;
+    width: 50%;
 }
 
 #resumeicon {
@@ -379,10 +672,41 @@ img.returntotop {
     }
   }
 
+@media screen and (max-width: 600px) {
+
+    #aboutcontent {
+        width: 330px;
+        justify-content: center;
+    }
+    
+    #aboutbreak, #p1, #p2 {
+        width: 330px;
+    }
+
+    
+    #resumeicon {
+        width: 80px;
+        height: 80px;  
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    
+    #aboutcontent {
+        width: 650px;
+    }
+    
+    #resumeicon {
+        width: 117px;
+        height: 117px;  
+    }
+}
+
+
 /* PROJECTS */
 
 #projectstop {
-    display: flex;;
+    display: flex;
     height: 1691px;
 }
 
@@ -440,6 +764,22 @@ img.returntotop {
     font-size: 2rem;
     margin: 2rem;
     color: #F7F6E4;
+    display: flex;
+}
+
+.projectname {
+    justify-content: flex-start;
+    width: 362px;
+}
+
+.projectyear {
+    justify-content: center;
+    width: 264px;
+}
+
+.projectlink {
+    justify-content: flex-end;
+    width: 362px;
 }
 
 .projectimage {
@@ -474,6 +814,144 @@ img.returntotop {
 
 #moreprojectslink:active {
     background-color: #E56E34;
+}
+
+@media screen and (max-width: 600px) {
+
+    #projectstop {
+        height: 610px;
+        padding-top: 10px;
+    }
+    
+    #projects {
+        max-height: 610px;
+    }
+
+    #projectscontainer {
+        padding-top: 10px;
+    }
+
+    .projectscontainer {
+        width: 330px;
+    }
+    
+    .projects {
+        height: 32px;
+        background-size: cover;
+    }
+
+    #project1 {
+        max-height: 166px;
+        overflow: hidden;
+        border-bottom-width: 0;
+    }
+    
+    #project2 {
+        max-height: 166px;
+        overflow: hidden;
+        border-bottom-width: 0;
+    }
+    
+    #project3 {
+        height: 166px;
+        overflow: hidden;
+    }
+
+    .projectimage {
+        width: 328px;
+        min-height: 0px;
+        max-height: 136px;
+        overflow: hidden;
+    }
+    
+    #moreprojects {
+        width: 330px;
+        margin: 0 auto;
+    }
+    .projectname, .projectyear, .projectlink {
+        font-size: 0.85rem;
+        margin: 0.7rem;
+    }
+
+    .projectname {
+        width: 140px;
+    }
+
+    .projectyear {
+        width: 50px;
+    }
+
+    .projectlink {
+        width: 140px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    #projectstop {
+        height: 1200px;
+        padding-top: 10px;
+    }
+    
+    #projects {
+        max-height: 1200px;
+    }
+
+    #projectscontainer {
+    }
+
+    .projectscontainer {
+        width: 650px;
+    }
+    
+    .projects {
+        height: 61px;
+        background-size: cover;
+    }
+
+    #project1 {
+        max-height: 330px;
+        overflow: hidden;
+        border-bottom-width: 0;
+    }
+    
+    #project2 {
+        max-height: 330px;
+        overflow: hidden;
+        border-bottom-width: 0;
+    }
+    
+    #project3 {
+        height: 330px;
+        overflow: hidden;
+    }
+
+    .projectimage {
+        width: 650px;
+        min-height: 0px;
+        max-height: 269px;
+        overflow: hidden;
+    }
+    
+    #moreprojects {
+        width: 650px;
+        margin: 0 auto;
+    }
+    .projectname, .projectyear, .projectlink {
+        font-size: 0.85rem;
+        margin: 0.7rem;
+    }
+
+    .projectname {
+        width: 140px;
+    }
+
+    .projectyear {
+        width: 50px;
+    }
+
+    .projectlink {
+        width: 140px;
+    }
 }
 
 /* SKILLS */
