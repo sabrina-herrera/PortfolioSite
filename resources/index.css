@@ -54,7 +54,9 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0px 100px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 100px;
     scroll-margin-top: 140px;
 }
 
@@ -63,18 +65,24 @@ section {
     justify-content: center;
     flex-wrap: wrap;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
 
     .sectionheaders {
         height: 40px;
     }
     .sectioncontainers {
         scroll-margin-top: 90px;
-        margin: 0px 22px;
+        padding: 0px 22px;
     }
 
     .headerlines {
         width: 100px;
+    }
+}
+
+@media screen and (min-width: 681px) and (max-width:1200px) {
+    .sectioncontainers {
+        padding: 0px 55px;
     }
 }
 
@@ -125,7 +133,11 @@ h5 {
     margin: 20px 25px;
 }
 
-@media screen and (max-width: 600px) {
+p {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 680px) {
     h1 {
         font-size: 1.75rem;
     }
@@ -139,30 +151,43 @@ h5 {
         margin: 15px;
     }
 
+    h4 {
+        font-size: 0.5rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+        margin: 0px;
+    }
+
     p {
         font-size: 0.875rem;
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:900px) {
+@media screen and (min-width: 681px) and (max-width:1200px) {
     h1 {
         font-size: 3.5rem;
     }
    
    h2 {
        font-size: 1.5rem;
+   }
+
+   h3 {
+       font-size: 2rem;
+   }
+
+   h4 {
+       font-size: 0.9375rem;
+   }
+
+   h5 {
+       font-size: 2rem;
+       margin: 0px;
    }
 }
 
-@media screen and (min-width: 901px) and (max-width: 1200px) {
-    h1 {
-        font-size: 3.5rem;
-    }
-   
-   h2 {
-       font-size: 1.5rem;
-   }
-}
 
 /* HERO PAGE */
 
@@ -315,7 +340,7 @@ h5 {
     overflow: scroll;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
     .hero {
         padding: 30px 20px;
     }
@@ -389,7 +414,7 @@ h5 {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 900px) {
+@media screen and (min-width: 681px) and (max-width: 900px) {
     .hero {
         padding: 57px 50px 30px;
     }
@@ -580,7 +605,11 @@ div.returntotop {
     z-index: 1;
     left: 90%;
     top: 90%;
+    border-radius: 50%;
+    background-color: #F7F6E465;
+    box-shadow: 0px 0px 25px -3px #F7F6E4;
 }
+
 
 img.returntotop {
     rotate: 180deg;
@@ -593,7 +622,7 @@ img.returntotop {
     transition-timing-function: ease-in;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
     #stickynav {
         top: 25px;
     }
@@ -610,9 +639,14 @@ img.returntotop {
     .navlink {
         padding: 0px 8px 5px;
     }
+
+    img.returntotop {
+        rotate: 180deg;
+        scale: 50%;
+    }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1200px) {
+@media screen and (min-width: 681px) and (max-width: 1200px) {
 
     #navbar {
         width: 674px;
@@ -625,6 +659,11 @@ img.returntotop {
 
     .navlink {
         padding: 0px 8px 5px;
+    }
+
+    img.returntotop {
+        rotate: 180deg;
+        scale: 70%;
     }
 }
 
@@ -672,7 +711,7 @@ img.returntotop {
     }
   }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
 
     #aboutcontent {
         width: 330px;
@@ -690,15 +729,19 @@ img.returntotop {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1200px) {
+@media screen and (min-width: 681px) and (max-width: 1200px) {
     
     #aboutcontent {
         width: 650px;
     }
+
+    #p2 {
+        width: 65%;
+    }
     
     #resumeicon {
-        width: 117px;
-        height: 117px;  
+        width: 150px;
+        height: 150px;  
     }
 }
 
@@ -708,6 +751,7 @@ img.returntotop {
 #projectstop {
     display: flex;
     height: 1691px;
+    margin: 10px 0px;
 }
 
 #projects {
@@ -770,6 +814,7 @@ img.returntotop {
 .projectname {
     justify-content: flex-start;
     width: 362px;
+    flex-grow: 1;
 }
 
 .projectyear {
@@ -780,6 +825,7 @@ img.returntotop {
 .projectlink {
     justify-content: flex-end;
     width: 362px;
+    flex-grow: 1;
 }
 
 .projectimage {
@@ -816,11 +862,11 @@ img.returntotop {
     background-color: #E56E34;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
 
     #projectstop {
         height: 610px;
-        padding-top: 10px;
+        margin: 10px 0px;
     }
     
     #projects {
@@ -869,7 +915,7 @@ img.returntotop {
         margin: 0 auto;
     }
     .projectname, .projectyear, .projectlink {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
         margin: 0.7rem;
     }
 
@@ -886,17 +932,14 @@ img.returntotop {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1200px) {
+@media screen and (min-width: 681px) and (max-width: 1200px) {
     #projectstop {
         height: 1200px;
-        padding-top: 10px;
+        margin: 10px 0px;
     }
     
     #projects {
         max-height: 1200px;
-    }
-
-    #projectscontainer {
     }
 
     .projectscontainer {
@@ -937,7 +980,7 @@ img.returntotop {
         margin: 0 auto;
     }
     .projectname, .projectyear, .projectlink {
-        font-size: 0.85rem;
+        font-size: 1.31rem;
         margin: 0.7rem;
     }
 
@@ -961,6 +1004,7 @@ img.returntotop {
     background-size: 175%; 
     width: 988px;
     height: 988px;
+    box-shadow: 5px 5px 10px #2B2D2925;
 }
 
 #skillscontainer {
@@ -984,8 +1028,50 @@ img.returntotop {
     height: 200px;
 }
 
+@media screen and (max-width: 680px) {
+    #skillscontent {
+        width: 330px;
+        height: 330px;
+        margin: 10px 0px;
+    }
 
+    #skillscontainer {
+        margin: 25px 30px;
+    }
+    
+    .skill {
+        width: 68px;
+    }
+    
+    .skillicon {
+        height: 68px
+}
+}
+
+@media screen and (min-width: 681px) and (max-width: 1200px) {
+    #skillscontent {
+        width: 650px;
+        height: 650px;
+        margin: 10px 0px;
+    }
+
+    #skillscontainer {
+        margin: 50px 40px;
+    }
+    
+    .skill {
+        width: 150px;
+    }
+    
+    .skillicon {
+        height: 130px
+}
+}
 /* CONTACT */
+
+#contacttop {
+    margin-top: 50px;
+}
 
 .contacttype {
     display: flex;
@@ -1085,9 +1171,136 @@ img.returntotop {
     transition-timing-function: ease-in;
 }
 
+@media screen and (max-width: 680px) {
+
+    #contacttop {
+        margin-top: 20px;
+    }
+
+    .contacttype {
+        margin: 18px 0px;
+        padding-left: 20px;
+    }
+    
+    .contactcircle {
+        width: 43px;
+        height: 43px;
+    }
+    
+    .contactinfo {
+        font-size: 0.8125rem;
+        padding-left: 10px;
+    }
+
+    #connectheader {
+        width: 330px;
+        height: 26px;
+        padding: 4px 7px;
+        margin-top: 10px;
+    }
+    
+    #connectcontent {
+        width: 330px;
+    }
+    
+    #emailicon {
+        width: 25px;
+        height: 19px;
+        padding-left: 2px;
+    }
+    
+    #phoneicon {
+        width: 31px;
+        height: 23px;
+    }
+    
+    #linkedinicon {
+        width: 30px;
+        height: 21px;
+    }
+    
+    #githubicon {
+        width: 40px;
+        height: 27px;
+    }
+    
+    #copy {
+        height: 16px;
+        width: 16px;
+        padding-bottom: 2px;
+    }
+
+}
+
+@media screen and (min-width: 681px) and (max-width: 1200px) {
+    .contacttype {
+        margin: 40px 0px;
+        padding-left: 45px;
+    }
+    
+    .contactcircle {
+        width: 87px;
+        height: 87px;
+    }
+    
+    .contactinfo {
+        font-size: 1.6875rem;
+        padding-left: 30px;
+    }
+
+    #connectheader {
+        width: 650px;
+        height: 51px;
+        padding: 7px 23px 6px;
+    }
+    
+    #connectcontent {
+        width: 650px;
+    }
+    
+    #emailicon {
+        width: 51px;
+        height: 37px;
+        padding-left: 2px;
+    }
+    
+    #phoneicon {
+        width: 65px;
+        height: 45px;
+    }
+    
+    #linkedinicon {
+        width: 62px;
+        height: 43px;
+    }
+    
+    #githubicon {
+        width: 80px;
+        height: 55px;
+    }
+    
+    #copy {
+        height: 25px;
+        width: 25px;
+        padding-bottom: 2px;
+    }
+}
+
 /* FOOTER */
 
 #copyrightfooter {
     font-family: 'Dela Gothic One', sans-serif;
     font-size: 1.75rem;
+}
+
+@media screen and (max-width: 680px) {
+    #copyrightfooter {
+        font-size: 0.625rem;
+    }
+}
+
+@media screen and (min-width: 681px) and (max-width: 1200px) {
+    #copyrightfooter {
+        font-size: 1rem;
+    }
 }

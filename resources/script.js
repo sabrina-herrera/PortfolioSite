@@ -1,3 +1,5 @@
+// PROJECT CASCADE FEATURE
+
 let target = document.querySelector('.maincontent');
 let project1 = document.querySelector('#project1');
 let project2 = document.querySelector('#project2');
@@ -8,9 +10,9 @@ target.addEventListener('click', (e = () => {
     console.log(target.scrollTop);
 }))
 
-target.addEventListener('scroll', (e = () => {
+const projectCascade = () => {
     let scrollTop = target.scrollTop;
-    const x = window.matchMedia('(max-width: 600px)')
+    const x = window.matchMedia('(max-width: 680px)')
     const y = window.matchMedia('(max-width: 1200px)')
     const z = window.matchMedia('(min-width: 1201px)')
     if(x.matches) {
@@ -102,13 +104,18 @@ target.addEventListener('scroll', (e = () => {
         }
     }
     
-
     project1.style.maxHeight = p1height+'px';
     project2.style.maxHeight = p2height+'px';
     project3.style.maxHeight = p3height+'px';
     projects.style.maxHeight = maxHeight+'px';
 
-}))
+}
+
+projectCascade();
+
+target.addEventListener('scroll', projectCascade);
+
+// FUN FACT TRIGGER
 
 let button = document.querySelector('#funfacticon');
 let facts = [document.querySelector('#funfact1'), document.querySelector('#funfact2'), document.querySelector('#funfact3'), document.querySelector('#funfact4'), document.querySelector('#funfact5')];
@@ -122,6 +129,8 @@ button.addEventListener('click', (e = () => {
         facts.forEach((e) => e.style.display = 'none');
     }
 }))
+
+// COPY EMAIL FUNCTION
 
 let email = document.querySelector('#email').innerHTML;
 let copyIcon = document.querySelector('#copy');
