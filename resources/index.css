@@ -1090,7 +1090,7 @@ img.returntotop {
 
 .skillicon {
     width: auto;
-    height: 200px;
+    height: 12.5rem;
 }
 
 @media screen and (max-width: 680px) {
@@ -1109,7 +1109,7 @@ img.returntotop {
     }
     
     .skillicon {
-        height: 68px
+        height: 4.25rem;
 }
 }
 
@@ -1129,7 +1129,7 @@ img.returntotop {
     }
     
     .skillicon {
-        height: 130px
+        height: 8.125rem;
 }
 }
 /* CONTACT */
@@ -1194,23 +1194,23 @@ img.returntotop {
 }
 
 #emailicon {
-    width: 76px;
-    height: 58px;
+    width: 4.75rem;
+    height: 3.625rem;
 }
 
 #phoneicon {
-    width: 97px;
-    height: 69px;
+    width: 6.06rem;
+    height: 4.313rem;
 }
 
 #linkedinicon {
-    width: 93px;
-    height: 65px;
+    width: 5.812rem;
+    height: 4.06rem;
 }
 
 #githubicon {
-    width: 121px;
-    height: 84px;
+    width: 7.56rem;
+    height: 5.25rem;
 }
 
 #copy {
@@ -1264,23 +1264,23 @@ img.returntotop {
     }
     
     #emailicon {
-        width: 25px;
-        height: 19px;
+        width: 1.56rem;
+        height: 1.56rem;
     }
     
     #phoneicon {
-        width: 31px;
-        height: 23px;
+        width: 1.875rem;
+        height: 1.875rem;
     }
     
     #linkedinicon {
-        width: 30px;
-        height: 21px;
+        width: 1.875rem;
+        height: 1.875rem;
     }
     
     #githubicon {
-        width: 40px;
-        height: 27px;
+        width: 2.5rem;
+        height: 1.875rem;
     }
     
     #copy {
@@ -1318,23 +1318,23 @@ img.returntotop {
     }
     
     #emailicon {
-        width: 51px;
-        height: 37px;
+        width: 3.44rem;
+        height: 3.44rem;
     }
     
     #phoneicon {
-        width: 65px;
-        height: 45px;
+        width: 3.44rem;
+        height: 3.44rem;
     }
     
     #linkedinicon {
-        width: 62px;
-        height: 43px;
+        width: 3.44rem;
+        height: 3.44rem;
     }
     
     #githubicon {
-        width: 80px;
-        height: 55px;
+        width: 3.44rem;
+        height: 3.44rem;
     }
     
     #copy {
