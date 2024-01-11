@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 100dvh;
     position: relative;
     scroll-behavior: smooth;
     overflow-y: auto;
@@ -28,7 +28,7 @@ body {
 section {
     scroll-snap-align: start;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     overflow-y: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
@@ -138,14 +138,6 @@ p {
 }
 
 @media screen and (max-width: 680px) {
-    h1 {
-        font-size: 1.75rem;
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
     h3 {
         font-size: 1.49rem;
         margin: 15px;
@@ -165,14 +157,8 @@ p {
     }
 }
 
+
 @media screen and (min-width: 681px) and (max-width:1200px) {
-    h1 {
-        font-size: 3.5rem;
-    }
-   
-   h2 {
-       font-size: 1.5rem;
-   }
 
    h3 {
        font-size: 2rem;
@@ -263,7 +249,7 @@ p {
     animation-play-state: paused;
 }
 
-#funfacticon:visited {
+#funfacticon:visited, #funfacticon:active {
     animation: 6s rotate linear infinite;
 }
 
@@ -327,10 +313,10 @@ p {
 .subtitle {
     display: flex;
     flex-direction: column;
-    max-width: 1070px;
+    max-width: 1300px;
     padding: 0px auto;
     margin: 0px;
-    justify-content: flex-start;
+    flex-grow: 1;
 }
 
 .maincontent {
@@ -342,7 +328,7 @@ p {
 
 @media screen and (max-width: 680px) {
     .hero {
-        padding: 30px 20px;
+        padding: 30px 10px;
     }
 
     .herocrumb {
@@ -399,7 +385,7 @@ p {
     }
     
     #funfact3 {
-        top: 30%;
+        top: 25%;
         left: 34.9%;
     }
     
@@ -458,18 +444,18 @@ p {
     }
 
     .funfact {
-        width: 213px;
-        height: 213px;
+        width: 160px;
+        height: 160px;
     }
 
     #funfact1 {
-        top: 7.5%;
+        top: 10.5%;
         left: 4.7%;
     }
     
     #funfact2 {
         top: 15.6%;
-        left: 64%;
+        left: 75%;
     }
     
     #funfact3 {
@@ -516,10 +502,6 @@ p {
         height: 30px;
     }
 
-    .subtitle {
-        max-width: 735px;
-    }
-
     #funfacticon {
         width: 145px;
         height: 145px;
@@ -539,7 +521,78 @@ p {
         width: 213px;
         height: 213px;
     }
+
+    #funfact1 {
+        top: 10%;
+        left: 8.7%;
+    }
+    
+    #funfact2 {
+        top: 17.1%;
+        left: 42%;
+    }
+    
+    #funfact3 {
+        top: 8%;
+        left: 75%;
+    }
+    
+    #funfact4 {
+        bottom: 10.8%;
+        left: 21.7%;
+    }
+    
+    #funfact5 {
+        bottom: 9.8%;
+        left: 70.4%;
+    }
 }
+
+
+/* TITLE SPECIFIC MEDIA QUERIES */
+
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .subtitle {
+        max-width: 425px;
+    }
+}
+
+@media screen and (min-width: 681px) and (max-width: 799px) {
+    h1 {
+        font-size: 2.89rem;
+    }
+
+    h2 {
+        font-size: 1.24rem;
+    }
+
+    .subtitle {
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    h1 {
+        font-size: 3.4rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        max-width: 800px;
+    }
+}
+
 
 /* STICKY NAV BAR */
 
@@ -628,7 +681,7 @@ img.returntotop {
     }
 
     #navbar {
-        width: 390px;
+        width: 375px;
         height: 50px;
     }
 
@@ -765,6 +818,7 @@ img.returntotop {
 .projectscontainer {
     border: solid 2px #593832;
     width: 988px;
+    min-height: 91px;
 }
 
 .projects {
@@ -828,6 +882,15 @@ img.returntotop {
     flex-grow: 1;
 }
 
+.projectlink:hover {
+    transform: scale(1.2);
+    transition: all .25s ease-out;
+}
+
+.projectlink:visited {
+    text-decoration: none;
+}
+
 .projectimage {
     width: 984px;
     min-height: 0px;
@@ -865,12 +928,12 @@ img.returntotop {
 @media screen and (max-width: 680px) {
 
     #projectstop {
-        height: 610px;
+        height: 593px;
         margin: 10px 0px;
     }
     
     #projects {
-        max-height: 610px;
+        max-height: 593px;
     }
 
     #projectscontainer {
@@ -879,6 +942,7 @@ img.returntotop {
 
     .projectscontainer {
         width: 330px;
+        min-height: 32px;
     }
     
     .projects {
@@ -934,16 +998,17 @@ img.returntotop {
 
 @media screen and (min-width: 681px) and (max-width: 1200px) {
     #projectstop {
-        height: 1200px;
+        height: 1183px;
         margin: 10px 0px;
     }
     
     #projects {
-        max-height: 1200px;
+        max-height: 1183px;
     }
 
     .projectscontainer {
         width: 650px;
+        min-height: 61px;
     }
     
     .projects {
@@ -1131,7 +1196,6 @@ img.returntotop {
 #emailicon {
     width: 76px;
     height: 58px;
-    padding-left: 10px;
 }
 
 #phoneicon {
@@ -1150,23 +1214,19 @@ img.returntotop {
 }
 
 #copy {
-    height: 28px;
-    width: 28px;
-    transform: scale(-1);
-}
-
-#copy:visited {
-    transform: scale(-1);
+    height: 45px;
+    width: 45px;
+    align-self: center;
 }
 
 #copy:hover {
-    transform: scale(-1.25);
+    transform: scale(1.25);
     transition-duration: 200ms;
     transition-timing-function: ease-in;
 }
 
 #copy:active {
-    transform: scale(-1.5);
+    transform: scale(1.5);
     transition-duration: 100ms;
     transition-timing-function: ease-in;
 }
@@ -1206,7 +1266,6 @@ img.returntotop {
     #emailicon {
         width: 25px;
         height: 19px;
-        padding-left: 2px;
     }
     
     #phoneicon {
@@ -1261,7 +1320,6 @@ img.returntotop {
     #emailicon {
         width: 51px;
         height: 37px;
-        padding-left: 2px;
     }
     
     #phoneicon {

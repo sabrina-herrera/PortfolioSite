@@ -10,96 +10,127 @@ target.addEventListener('click', (e = () => {
     console.log(target.scrollTop);
 }))
 
+// TEST BOUNDING CLIENT RECT
+
+function update() {
+    const coordinates = [];
+    const coordinates2 = [];
+    const elem = document.querySelector('#projectstop');
+    const elem2 = document.querySelector('#projects');
+    const rect = elem.getBoundingClientRect();
+    const rect2 = elem2.getBoundingClientRect();
+
+    for (const key in rect) {
+        if (typeof rect[key] !== 'function') {
+            coordinates.push(`${key} : ${rect[key]}`);
+        }
+    }
+
+    for (const key in rect2) {
+        if (typeof rect2[key] !== 'function') {
+            coordinates2.push(`${key} : ${rect2[key]}`);
+        }
+    }
+    console.log(coordinates);
+    console.log(coordinates2);
+}
+
+target.addEventListener('click', update);
+update();
+
+
+// PROJECT CASCASE CONT
+
 const projectCascade = () => {
     let scrollTop = target.scrollTop;
     const x = window.matchMedia('(max-width: 680px)')
     const y = window.matchMedia('(max-width: 1200px)')
     const z = window.matchMedia('(min-width: 1201px)')
     if(x.matches) {
-        if(scrollTop < 356) {
-            p1height = 167;
-            p2height = 167;
-            p3height = 167;
-            maxHeight = 610;
-        } else if(scrollTop > 755) {
+        if(scrollTop < 355) {
+            p1height = 166;
+            p2height = 166;
+            p3height = 166;
+            maxHeight = 593;
+        } else if(scrollTop > 754) {
             p1height = 32;
             p2height = 32;
             p3height = 32;
-            maxHeight = 206;
+            maxHeight = 191;
         } else {
-            if(scrollTop < 487){
-                p1height = 167 - ((167 - 32) * ((scrollTop - 356) / 133));
-                p2height = 167;
+            if(scrollTop < 488){
+                p1height = 166 - ((166 - 32) * ((scrollTop - 355) / 133));
+                p2height = 166;
                 p3height = 498;
-                maxHeight = 610 - ((610 - 206) * ((scrollTop - 356) / 399));
-            } else if(scrollTop < 620){
+                maxHeight = 593 - ((593 - 191) * ((scrollTop - 355) / 399));
+            } else if(scrollTop < 621){
                 p1height = 32;
-                p2height = 167 - ((167 - 32) * ((scrollTop - 487) / 133));
-                p3height = 167;
-                maxHeight = 610 - ((610 - 206) * ((scrollTop - 356) / 399));
-            } else if(scrollTop <= 755){
+                p2height = 166 - ((166 - 32) * ((scrollTop - 488) / 133));
+                p3height = 166;
+                maxHeight = 593 - ((593 - 191) * ((scrollTop - 355) / 399));
+            } else if(scrollTop <= 754){
                 p1height = 32;
                 p2height = 32;
-                p3height = 167 - ((167 - 32) * ((scrollTop - 620) / 133));
-                maxHeight = 610 - ((610 - 206) * ((scrollTop - 356) / 399));
+                p3height = 166 - ((166 - 32) * ((scrollTop - 621) / 133));
+                maxHeight = 593 - ((593 - 191) * ((scrollTop - 355) / 399));
             } 
         }
     } else if(y.matches){
-        if(scrollTop < 426) {
+        if(scrollTop < 518) {
             p1height = 330;
             p2height = 330;
             p3height = 330;
-            maxHeight = 1200;
-        } else if(scrollTop > 1224) {
+            maxHeight = 1183;
+        } else if(scrollTop > 1325) {
             p1height = 61;
             p2height = 61;
             p3height = 61;
-            maxHeight = 393;
+            maxHeight = 376;
         } else {
-            if(scrollTop < 692){
-                p1height = 330 - ((330 - 61) * ((scrollTop - 426) / 266));
+            if(scrollTop < 787){
+                p1height = 330 - ((330 - 61) * ((scrollTop - 518) / 269));
                 p2height = 330;
                 p3height = 330;
-                maxHeight =  1200 - ((1200 - 393) * ((scrollTop - 426) / 798));
-            } else if(scrollTop < 958){
+                maxHeight =  1183 - ((1183 - 376) * ((scrollTop - 518) / 807));
+            } else if(scrollTop < 1056){
                 p1height = 61;
-                p2height = 330 - ((330 - 61) * ((scrollTop - 692) / 266));
+                p2height = 330 - ((330 - 61) * ((scrollTop - 787) / 269));
                 p3height = 330;
-                maxHeight =  1200 - ((1200 - 393) * ((scrollTop - 426) / 798));
-            } else if(scrollTop <= 1224){
+                maxHeight =  1183 - ((1183 - 376) * ((scrollTop - 518) / 807));
+            } else if(scrollTop <= 1325){
                 p1height = 61;
                 p2height = 61;
-                p3height = 330 - ((330 - 61) * ((scrollTop - 958) / 266));
-                maxHeight =  1200 - ((1200 - 393) * ((scrollTop - 426) / 798));
+                p3height = 330 - ((330 - 61) * ((scrollTop - 1056) / 269));
+                maxHeight =  1183 - ((1183 - 376) * ((scrollTop - 518) / 807));
             } 
         }
     } else if(z.matches){
-        if(scrollTop < 415) {
+        if(scrollTop < 498) {
             p1height = 498;
             p2height = 498;
             p3height = 498;
             maxHeight = 1691;
-        } else if(scrollTop > 1630) {
+        } else if(scrollTop > 1692) {
             p1height = 91;
             p2height = 91;
             p3height = 91;
-            maxHeight = 695;
+            maxHeight = 496;
         } else {
-            if(scrollTop < 820){
-                p1height = 498 - ((498 - 91) * ((scrollTop - 415) / 405));
+            if(scrollTop < 896){
+                p1height = 498 - ((498 - 91) * ((scrollTop - 498) / 398));
                 p2height = 498;
                 p3height = 498;
-                maxHeight =  1691 - ((1691 - 695) * ((scrollTop - 415) / 1060));
-            } else if(scrollTop < 1225){
+                maxHeight =  1691 - ((1691 - 496) * ((scrollTop - 498) / 1194));
+            } else if(scrollTop < 1294){
                 p1height = 91;
-                p2height = 498 - ((498 - 91) * ((scrollTop - 820) / 405));
+                p2height = 498 - ((498 - 91) * ((scrollTop - 896) / 398));
                 p3height = 498;
-                maxHeight = 1691 - ((1691 - 695) * ((scrollTop - 415) / 1060));
-            } else if(scrollTop <= 1630){
+                maxHeight = 1691 - ((1691 - 496) * ((scrollTop - 498) / 1194));
+            } else if(scrollTop <= 1692){
                 p1height = 91;
                 p2height = 91;
-                p3height = 498 - ((498 - 91) * ((scrollTop - 1225) / 405));
-                maxHeight = 1691 - ((1691 - 695) * ((scrollTop - 415) / 1060));
+                p3height = 498 - ((498 - 91) * ((scrollTop - 1294) / 398));
+                maxHeight = 1691 - ((1691 - 496) * ((scrollTop - 498) / 1194));
             } 
         }
     }
@@ -111,9 +142,8 @@ const projectCascade = () => {
 
 }
 
-projectCascade();
-
 target.addEventListener('scroll', projectCascade);
+projectCascade();
 
 // FUN FACT TRIGGER
 
