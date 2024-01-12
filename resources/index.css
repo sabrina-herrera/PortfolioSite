@@ -553,7 +553,7 @@ p {
 
 @media screen and (max-width: 680px) {
     h1 {
-        font-size: 1.75rem;
+        font-size: 1.65rem;
     }
 
     h2 {
@@ -1194,22 +1194,22 @@ img.returntotop {
 }
 
 #emailicon {
-    width: 4.75rem;
+    width: 4.5rem;
     height: 3.625rem;
 }
 
 #phoneicon {
-    width: 6.06rem;
+    width: 5.8rem;
     height: 4.313rem;
 }
 
 #linkedinicon {
-    width: 5.812rem;
+    width: 5.25rem;
     height: 4.06rem;
 }
 
 #githubicon {
-    width: 7.56rem;
+    width: 6rem;
     height: 5.25rem;
 }
 
@@ -1264,22 +1264,22 @@ img.returntotop {
     }
     
     #emailicon {
-        width: 1.56rem;
+        width: 1.5rem;
         height: 1.56rem;
     }
     
     #phoneicon {
-        width: 1.875rem;
+        width: 1.6rem;
         height: 1.875rem;
     }
     
     #linkedinicon {
-        width: 1.875rem;
-        height: 1.875rem;
+        width: 1.65rem;
+        height: 1.65rem;
     }
     
     #githubicon {
-        width: 2.5rem;
+        width: 2rem;
         height: 1.875rem;
     }
     
@@ -1318,23 +1318,23 @@ img.returntotop {
     }
     
     #emailicon {
-        width: 3.44rem;
+        width: 3.2rem;
         height: 3.44rem;
     }
     
     #phoneicon {
-        width: 3.44rem;
+        width: 3.1rem;
         height: 3.44rem;
     }
     
     #linkedinicon {
-        width: 3.44rem;
-        height: 3.44rem;
+        width: 3.4rem;
+        height: 3.4rem;
     }
     
     #githubicon {
-        width: 3.44rem;
-        height: 3.44rem;
+        width: 3.5rem;
+        height: 3.5rem;
     }
     
     #copy {
