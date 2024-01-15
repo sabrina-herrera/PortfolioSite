@@ -59,19 +59,19 @@ const projectCascade = () => {
             maxHeight = 191;
         } else {
             if(scrollTop < 488){
-                p1height = 166 - ((166 - 32) * ((scrollTop - 355) / 399));
+                p1height = 166 - ((166 - 32) * ((scrollTop - 355) / 133));
                 p2height = 166;
                 p3height = 498;
                 maxHeight = 593 - ((593 - 191) * ((scrollTop - 355) / 399));
             } else if(scrollTop < 621){
                 p1height = 32;
-                p2height = 166 - ((166 - 32) * ((scrollTop - 355) / 399));
+                p2height = 166 - ((166 - 32) * ((scrollTop - 488) / 133));
                 p3height = 166;
                 maxHeight = 593 - ((593 - 191) * ((scrollTop - 355) / 399));
             } else if(scrollTop <= 754){
                 p1height = 32;
                 p2height = 32;
-                p3height = 166 - ((166 - 32) * ((scrollTop - 355) / 399));
+                p3height = 166 - ((166 - 32) * ((scrollTop - 621) / 133));
                 maxHeight = 593 - ((593 - 191) * ((scrollTop - 355) / 399));
             } 
         }
@@ -88,19 +88,19 @@ const projectCascade = () => {
             maxHeight = 376;
         } else {
             if(scrollTop < 787){
-                p1height = 330 - ((330 - 61) * ((scrollTop - 518) / 807));
+                p1height = 330 - ((330 - 61) * ((scrollTop - 518) / 269));
                 p2height = 330;
                 p3height = 330;
                 maxHeight =  1183 - ((1183 - 376) * ((scrollTop - 518) / 807));
             } else if(scrollTop < 1056){
                 p1height = 61;
-                p2height = 330 - ((330 - 61) * ((scrollTop - 518) / 807));
+                p2height = 330 - ((330 - 61) * ((scrollTop - 787) / 269));
                 p3height = 330;
                 maxHeight =  1183 - ((1183 - 376) * ((scrollTop - 518) / 807));
             } else if(scrollTop <= 1325){
                 p1height = 61;
                 p2height = 61;
-                p3height = 330 - ((330 - 61) * ((scrollTop - 518) / 807));
+                p3height = 330 - ((330 - 61) * ((scrollTop - 1056) / 269));
                 maxHeight =  1183 - ((1183 - 376) * ((scrollTop - 518) / 807));
             } 
         }
@@ -117,19 +117,19 @@ const projectCascade = () => {
             maxHeight = 496;
         } else {
             if(scrollTop < 896){
-                p1height = 498 - ((498 - 91) * ((scrollTop - 498) / 1194));
+                p1height = 498 - ((498 - 91) * ((scrollTop - 498) / 398));
                 p2height = 498;
                 p3height = 498;
                 maxHeight =  1691 - ((1691 - 496) * ((scrollTop - 498) / 1194));
             } else if(scrollTop < 1294){
                 p1height = 91;
-                p2height = 498 - ((498 - 91) * ((scrollTop - 498) / 1194));
+                p2height = 498 - ((498 - 91) * ((scrollTop - 896) / 398));
                 p3height = 498;
                 maxHeight = 1691 - ((1691 - 496) * ((scrollTop - 498) / 1194));
             } else if(scrollTop <= 1692){
                 p1height = 91;
                 p2height = 91;
-                p3height = 498 - ((498 - 91) * ((scrollTop - 498) / 1194));
+                p3height = 498 - ((498 - 91) * ((scrollTop - 1294) / 398));
                 maxHeight = 1691 - ((1691 - 496) * ((scrollTop - 498) / 1194));
             } 
         }
