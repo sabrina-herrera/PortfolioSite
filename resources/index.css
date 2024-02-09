@@ -873,13 +873,19 @@ img.returntotop {
 
 .projectyear {
     justify-content: center;
-    width: 264px;
+    width: auto;
 }
 
 .projectlink {
     justify-content: flex-end;
     width: 362px;
     flex-grow: 1;
+    text-decoration: none;
+}
+
+.projectlink > p {
+    color: #F7F6E4;
+    font-size: 2rem;
 }
 
 .projectlink:hover {
@@ -896,6 +902,8 @@ img.returntotop {
     min-height: 0px;
     max-height: 407px;
     overflow: hidden;
+    object-fit: cover;
+    object-position: top;
 }
 
 #moreprojects {
