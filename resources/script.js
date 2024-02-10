@@ -6,46 +6,11 @@ let project2 = document.querySelector('#project2');
 let project3 = document.querySelector('#project3');
 let projects = document.querySelector('#projects');
 
-target.addEventListener('click', (e = () => {
-    console.log(target.scrollTop);
-}))
-
-// TEST BOUNDING CLIENT RECT
-
-function update() {
-    const coordinates = [];
-    const coordinates2 = [];
-    const elem = document.querySelector('#projectstop');
-    const elem2 = document.querySelector('#projects');
-    const rect = elem.getBoundingClientRect();
-    const rect2 = elem2.getBoundingClientRect();
-
-    for (const key in rect) {
-        if (typeof rect[key] !== 'function') {
-            coordinates.push(`${key} : ${rect[key]}`);
-        }
-    }
-
-    for (const key in rect2) {
-        if (typeof rect2[key] !== 'function') {
-            coordinates2.push(`${key} : ${rect2[key]}`);
-        }
-    }
-    console.log(coordinates);
-    console.log(coordinates2);
-}
-
-target.addEventListener('click', update);
-update();
-
-
-// PROJECT CASCASE CONT
-
 const projectCascade = () => {
     let scrollTop = target.scrollTop;
     const x = window.matchMedia('(max-width: 680px)')
-    const y = window.matchMedia('(max-width: 1200px)')
-    const z = window.matchMedia('(min-width: 1201px)')
+    const y = window.matchMedia('(max-width: 2000px)')
+    const z = window.matchMedia('(min-width: 2001px)')
     if(x.matches) {
         if(scrollTop < 355) {
             p1height = 166;

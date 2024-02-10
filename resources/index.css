@@ -86,6 +86,12 @@ section {
     }
 }
 
+@media screen and (min-width: 1201px) and (max-width:2000px) {
+    .sectioncontainers {
+        padding: 0px 350px;
+    }
+}
+
 /* TEXT STYLING */
 
 h1, h2, h3, h4, li {
@@ -158,7 +164,7 @@ p {
 }
 
 
-@media screen and (min-width: 681px) and (max-width:1200px) {
+@media screen and (min-width: 681px) and (max-width:2000px) {
 
    h3 {
        font-size: 2rem;
@@ -699,7 +705,7 @@ img.returntotop {
     }
 }
 
-@media screen and (min-width: 681px) and (max-width: 1200px) {
+@media screen and (min-width: 681px) and (max-width: 2000px) {
 
     #navbar {
         width: 674px;
@@ -782,7 +788,7 @@ img.returntotop {
     }
 }
 
-@media screen and (min-width: 681px) and (max-width: 1200px) {
+@media screen and (min-width: 681px) and (max-width: 2000px) {
     
     #aboutcontent {
         width: 650px;
@@ -815,13 +821,13 @@ img.returntotop {
 }
 
 
-.projectscontainer {
+.projects-card {
     border: solid 2px #593832;
     width: 988px;
     min-height: 91px;
 }
 
-.projects {
+.project-header{
     width: 100%;
     height: 91px;
     display: flex;
@@ -858,7 +864,7 @@ img.returntotop {
     background-image: url(./project3.jpg);
 }
 
-.projectname, .projectyear, .projectlink {
+.projectname, .projectyear, .projectlink > p {
     font-size: 2rem;
     margin: 2rem;
     color: #F7F6E4;
@@ -884,8 +890,8 @@ img.returntotop {
 }
 
 .projectlink > p {
-    color: #F7F6E4;
-    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .projectlink:hover {
@@ -896,6 +902,7 @@ img.returntotop {
 .projectlink:visited {
     text-decoration: none;
 }
+
 
 .projectimage {
     width: 984px;
@@ -948,12 +955,12 @@ img.returntotop {
         padding-top: 10px;
     }
 
-    .projectscontainer {
+    .projects-card {
         width: 330px;
         min-height: 32px;
     }
     
-    .projects {
+    .project-header{
         height: 32px;
         background-size: cover;
     }
@@ -986,7 +993,7 @@ img.returntotop {
         width: 330px;
         margin: 0 auto;
     }
-    .projectname, .projectyear, .projectlink {
+    .projectname, .projectyear, .projectlink > p {
         font-size: 0.75rem;
         margin: 0.7rem;
     }
@@ -1004,7 +1011,7 @@ img.returntotop {
     }
 }
 
-@media screen and (min-width: 681px) and (max-width: 1200px) {
+@media screen and (min-width: 681px) and (max-width: 2000px) {
     #projectstop {
         height: 1183px;
         margin: 10px 0px;
@@ -1014,12 +1021,12 @@ img.returntotop {
         max-height: 1183px;
     }
 
-    .projectscontainer {
+    .projects-card {
         width: 650px;
         min-height: 61px;
     }
     
-    .projects {
+    .project-header{
         height: 61px;
         background-size: cover;
     }
@@ -1052,7 +1059,7 @@ img.returntotop {
         width: 650px;
         margin: 0 auto;
     }
-    .projectname, .projectyear, .projectlink {
+    .projectname, .projectyear, .projectlink > p{
         font-size: 1.31rem;
         margin: 0.7rem;
     }
@@ -1121,7 +1128,7 @@ img.returntotop {
 }
 }
 
-@media screen and (min-width: 681px) and (max-width: 1200px) {
+@media screen and (min-width: 681px) and (max-width: 2000px) {
     #skillscontent {
         width: 650px;
         height: 650px;
@@ -1164,7 +1171,8 @@ img.returntotop {
 }
 
 .contactinfo {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-size: 2rem;
     padding-left: 50px;
 }
@@ -1202,29 +1210,28 @@ img.returntotop {
 }
 
 #emailicon {
-    width: 4.5rem;
-    height: 3.625rem;
+    width: 4.25rem;
+    height: 4.25rem;
 }
 
 #phoneicon {
-    width: 5.8rem;
-    height: 4.313rem;
+    width: 4.4;
+    height: 4.4rem;
 }
 
 #linkedinicon {
-    width: 5.25rem;
-    height: 4.06rem;
+    width: 4.25rem;
+    height: 4.25rem;
 }
 
 #githubicon {
-    width: 6rem;
+    width: 5.25rem;
     height: 5.25rem;
 }
 
 #copy {
     height: 45px;
     width: 45px;
-    align-self: center;
 }
 
 #copy:hover {
@@ -1272,12 +1279,12 @@ img.returntotop {
     }
     
     #emailicon {
-        width: 1.5rem;
+        width: 1.56rem;
         height: 1.56rem;
     }
     
     #phoneicon {
-        width: 1.6rem;
+        width: 1.875rem;
         height: 1.875rem;
     }
     
@@ -1288,18 +1295,17 @@ img.returntotop {
     
     #githubicon {
         width: 2rem;
-        height: 1.875rem;
+        height: 2rem;
     }
     
     #copy {
-        height: 16px;
-        width: 16px;
-        padding-bottom: 2px;
+        height: 25px;
+        width: 25px;
     }
 
 }
 
-@media screen and (min-width: 681px) and (max-width: 1200px) {
+@media screen and (min-width: 681px) and (max-width: 2000px) {
     .contacttype {
         margin: 40px 0px;
         padding-left: 45px;
@@ -1326,12 +1332,12 @@ img.returntotop {
     }
     
     #emailicon {
-        width: 3.2rem;
+        width: 3.44rem;
         height: 3.44rem;
     }
     
     #phoneicon {
-        width: 3.1rem;
+        width: 3.44rem;
         height: 3.44rem;
     }
     
@@ -1346,9 +1352,8 @@ img.returntotop {
     }
     
     #copy {
-        height: 25px;
-        width: 25px;
-        padding-bottom: 2px;
+        height: 35px;
+        width: 35px;
     }
 }
 
@@ -1365,7 +1370,7 @@ img.returntotop {
     }
 }
 
-@media screen and (min-width: 681px) and (max-width: 1200px) {
+@media screen and (min-width: 681px) and (max-width: 2000px) {
     #copyrightfooter {
         font-size: 1rem;
     }

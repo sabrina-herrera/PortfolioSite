@@ -2,15 +2,6 @@
 > Welcome! My portfolio site serves as both a hub for any info you might need to know about me as a Front-End Developer and also a demonstration of my development and design skills.
 > Take a look [here](https://www.sabrina-herrera.com)
 
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Challenges and Future Additions](#challenges-and-future-additions)
-
-
 
 ## General Information
 A few of my goals when making this site, was to demonstrate my ability to 
