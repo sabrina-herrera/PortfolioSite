@@ -22,6 +22,11 @@ A few of my goals when making this site, was to demonstrate my ability to
 - Fun Fact button for a personal touch
 - Responsive design
 
+## Design
+
+Check out FIGMA file [here](https://www.figma.com/file/YJxU8dBzxuPC4wc3zr0siP/PORTFOLIO-WEBSITE?type=design&node-id=0%3A1&mode=dev&t=0gCuuFtfzolonitu-1)
+<img src="resources/PORTFILIODESIGN.svg" width="1000px"/>
+
 
 ## Challenges and Future Additions
 Challenges
